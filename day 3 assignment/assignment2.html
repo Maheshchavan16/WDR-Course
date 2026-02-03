@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Item And Prices</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Verdana;
+        background: #fff3e0;
+      }
+
+      header {
+        background: #e65100;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        font-size: 22px;
+      }
+
+      .main {
+        min-height: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box {
+        width: 60%;
+        background: white;
+        padding: 25px;
+        border-radius: 25px;
+        box-shadow: 0 0 18px #aaa;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+      }
+
+      th {
+        background: #ffe0b2;
+      }
+
+      input {
+        width: 60px;
+      }
+
+      button {
+        padding: 10px 30px;
+        border-radius: 20px;
+        background: #e65100;
+        color: white;
+        border: none;
+        font-size: 16px;
+      }
+
+      .center {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      footer {
+        background: #e65100;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Assignment 2 – Product Order Form</header>
+
+    <div class="main">
+      <div class="box">
+        <h2 align="center">Order Products</h2>
+
+        <table>
+          <tr>
+            <th>Product</th>
+            <th>Price (₹)</th>
+            <th>Quantity</th>
+          </tr>
+          <tr>
+            <td>Pen</td>
+            <td>10</td>
+            <td><input type="number" /></td>
+          </tr>
+          <tr>
+            <td>Notebook</td>
+            <td>50</td>
+            <td><input type="number" /></td>
+          </tr>
+          <tr>
+            <td>Pencil</td>
+            <td>5</td>
+            <td><input type="number" /></td>
+          </tr>
+        </table>
+
+        <div class="center">
+          <button>Calculate Total Price</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>© HTML Lab Assignment 2</footer>
+  </body>
+</html>

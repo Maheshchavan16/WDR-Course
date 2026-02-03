@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.layout {
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "sidebar content";
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+}
+
+/* Header Styles */
+.header {
+  grid-area: header;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  grid-area: sidebar;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+}
+
+/* Main Content Styles */
+.content {
+  grid-area: content;
+  padding: 20px;
+}
+
+/* Profile Card Styles */
+.profile-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-card img {
+  border-radius: 50%;
+  margin: 10px 0;
+}
+
+.profile-card .badge {
+  display: inline-block;
+  background-color: green;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.profile-card .Skills span {
+  display: inline-block;
+  background-color: #eee;
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Stats Section Styles */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.stat-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.stat-card h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.stat-card p {
+  margin: 5px 0 0;
+  color: #666;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+table td:first-child {
+  font-weight: bold;
+}
